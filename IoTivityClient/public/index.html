@@ -70,9 +70,9 @@
               <li class="list-group-item" ng-repeat="(key,value) in selectedItem.properties">
                 <strong style="text-transform: capitalize">{{key}}</strong>
                 <div style="display: inline-block" class="pull-right" ng-switch="$parent.selectedItem.propertyTypes[key]">
-                  <div ng-switch-when="boolean"> Current: {{value}}
-                    <button type="button" ng-click="$parent.setPropertyAndUpdateCurrentItem(true,$parent.selectedItem,key)" class="btn btn-success btn-xs">On</button>
-                    <button type="button" ng-click="$parent.setPropertyAndUpdateCurrentItem(false,$parent.selectedItem,key)" class="btn btn-danger btn-xs">Off</button>
+                  <div ng-switch-when="boolean">
+                    <button type="button" ng-click="$parent.setPropertyAndUpdateCurrentItem(true,$parent.selectedItem,key)" class="btn btn-xs" ng-class="{'btn-success': value, 'btn-default': !value}">On</button>
+                    <button type="button" ng-click="$parent.setPropertyAndUpdateCurrentItem(false,$parent.selectedItem,key)" class="btn btn-xs" ng-class="{'btn-danger': !value, 'btn-default': value}">Off</button>
                   </div>
                   <div ng-switch-when="number">
                     <input type="number" style="width:3em" ng-model="$parent.selectedItem.properties[key]">
