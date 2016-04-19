@@ -1,4 +1,4 @@
-# Anima Node IoTivity Demo
+# Node IoTivity Dashboard
 
 ## Repository Contents
 
