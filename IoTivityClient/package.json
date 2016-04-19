@@ -1,0 +1,20 @@
+{
+  "name": "iotivity_client",
+  "version": "0.0.1",
+  "description": "An IoTivity client that presents all discovered resources on a website and enables a user to control them.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "iotivity",
+    "client",
+    "webserver"
+  ],
+  "author": "Alexander Larsson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "iotivity-node": "^1.0.1-1"
+  }
+}

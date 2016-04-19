@@ -1,0 +1,19 @@
+{
+  "name": "sample_server",
+  "version": "0.0.1",
+  "description": "A sample IoTivity server that represents a light and prints state changes to console.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "IoTivity",
+    "sample",
+    "demo"
+  ],
+  "author": "Alexander Larsson",
+  "license": "ISC",
+  "dependencies": {
+    "iotivity-node": "^1.0.1-1"
+  }
+}
